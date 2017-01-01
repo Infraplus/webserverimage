@@ -16,23 +16,22 @@ For more information: https://docs.docker.com/engine/installation/linux/ubuntuli
 # How to:
 You can create your image or pull it directly from dockerhub:
 ## Create local image
-$git clone git@github.com:shitana/webserverimage.git
-$cd webserverimage/
-$sudo docker build -t webserverphp:latest .
---snip--
-$ sudo docker images
-REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
-webserverphp                latest              bbe0e090daa3        41 hours ago        307 MB
+$git clone git@github.com:shitana/webserverimage.git</br>
+$cd webserverimage/</br>
+$sudo docker build -t webserverphp:latest .</br>
+--snip--</br>
+$ sudo docker images</br>
+REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE</br>
+webserverphp                latest              bbe0e090daa3        41 hours ago        307 MB</br>
 
 ## Pull image from dockerhub
 $docker pull salmenhitana/webserverphp
 
 ## Run the container:
-$sudo docker run -d -p 8080:80 webserverphp
-
-The webpage should return the running container IP address
-$curl localhost:8080
-172.17.0.2  
+$sudo docker run -d -p 8080:80 webserverphp</br></br>
+The webpage should return the running container IP address</br>
+$curl localhost:8080</br>
+172.17.0.2  </br>
 
 # Docker swarm tutorial
-To be continued !!!
+To be continued !!!</br>
